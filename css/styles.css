@@ -1,0 +1,237 @@
+/*
+Author: Taylor Welder
+File Name: styles.css
+Date: 11/19/2021
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body and images */
+body{
+
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rules for mobile viewport */
+.mobile{
+  display: block;
+}
+
+.tab-desk{
+  display: none;
+}
+
+
+/* Style rules for header content */
+header{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+/* Style rules for navigation area */
+nav{
+  background-color: white;
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+nav ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li{
+  font-size: 1.5em;
+  font-family: 'Montagu Slab', serif;
+  font-weight: bold;
+  border-top: 0.5px solid maroon;
+}
+
+nav li:first-child{
+  border-top: none;
+}
+
+nav li a{
+  display: block;
+  color: maroon;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+/* Style rules for main content */
+main{
+  font-family: 'Outfit', sans-serif;
+  width: 100%;
+}
+
+main a{
+  text-decoration: none;
+  color: #4e0004;
+  font-style: italic;
+}
+
+.tel-link{
+  background-color: maroon;
+  padding: 2%;
+  margin: 5% auto;
+  width: 80%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.tel-link a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: block;
+}
+
+#welcome, #info, #contact{
+  font-family: 'Outfit', sans-serif;
+  color: #4e0004;
+  font-size: 1em;
+}
+
+.round{
+  border-radius: 8px;
+}
+
+#contact{
+  text-align: center;
+}
+
+#info{
+  background-color: #d3d3d3;
+  border-top: .5px solid maroon;
+  border-bottom: .5px solid maroon;
+  margin-bottom: 0;
+  margin-top: 3%;
+}
+
+.action{
+  font-size: 1.25em;
+  color: #e2c935;
+}
+
+/* Style rules for footer content */
+footer{
+  margin-top: 5em;
+  text-align: center;
+  font-size: 0.85em;
+  color: maroon;
+  background-color: #ca8f8f;
+  font-family: 'Outfit', sans-serif;
+}
+
+footer a{
+  color: maroon;
+  text-decoration: none;
+}
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px), print{
+  /* Tablet Viewport: Show tab-desk class, hide mobile class */
+  .tab-desk{
+    display: block;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+  /* Tablet Viewport: Style rules for nav area */
+  nav{
+    margin-bottom: 0;
+  }
+
+  nav  li{
+    border-top: none;
+    display: inline-block;
+    font-size: 1.25em;
+  }
+
+  nav li a{
+    padding: 0.5em;
+  }
+
+  nav li a:hover{
+    background-color: maroon;
+    color: #fff;
+  }
+
+
+}
+
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1296px), print{
+  /* Desktop Viewport: Style rules for nav area */
+  nav li{
+    font-size: 1.5em;
+  }
+
+  nav li a{
+    padding: 0.5em 1.5em;
+  }
+
+  /* Desktop Viewport: Style rules for main content */
+  main{
+    background-color: #fff;
+  }
+  #picture{
+    width: 30%;
+    margin-left: 10%;
+    float: left;
+  }
+
+  #welcome, #info, #contact{
+    float: right;
+    margin-right: 7%;
+    width: 50%;
+  }
+
+  #info{
+    margin-top: 0;
+    font-size: 0.85em;
+  }
+
+  #info ul{
+    margin-left: 5%;
+  }
+
+  /* Desktop Viewport: Style rules for footer content */
+  footer{
+    clear: left;
+    width: 100%;
+  }
+
+}
+
+
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1800px), print{
+
+  body{
+      background: linear-gradient(#fff, maroon);
+  }
+
+  #container{
+    width: 1799px;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+
+}
+
